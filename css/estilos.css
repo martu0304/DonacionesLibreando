@@ -376,6 +376,8 @@ main .main-section img {
     main section .galeria .item-galeria-row {
       grid-column: span 2;
       grid-row: span 1; }
+  main .main-section p {
+    font-size: 1.2rem; }
   main .main-section .img-libro img {
     width: 100%; }
   main .main-section .grid-container {
@@ -386,9 +388,17 @@ main .main-section img {
     grid-auto-rows: auto;
     grid-gap: 10px;
     text-align: center; }
+    main .main-section .grid-container p {
+      font-size: 1.2rem; }
     main .main-section .grid-container .huella {
       grid-column: span 2;
       width: 100%; }
+      main .main-section .grid-container .huella p {
+        font-size: 1.2rem; }
+    main .main-section .grid-container .individual p {
+      font-size: 1.2rem; }
+    main .main-section .grid-container .individual-center p {
+      font-size: 1.2rem; }
     main .main-section .grid-container .huella-img {
       grid-column: span 2; }
   .footer {
@@ -412,6 +422,8 @@ main .main-section img {
 @media screen and (max-width: 600px) {
   header {
     font-size: 1rem; }
+  main section p {
+    font-size: 1rem; }
   main section .galeria {
     width: 80%;
     display: grid;
@@ -424,4 +436,12 @@ main .main-section img {
       grid-row: span 1; }
     main section .galeria .item-galeria-feria {
       grid-column: span 2;
-      grid-row: span 1; } }
+      grid-row: span 1; }
+  main section .grid-container p {
+    font-size: 1rem; }
+  main section .grid-container .huella p {
+    font-size: 1rem; }
+  main section .grid-container .individual p {
+    font-size: 1rem; }
+  main section .grid-container .individual-center p {
+    font-size: 1rem; } }
