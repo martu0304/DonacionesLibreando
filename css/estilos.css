@@ -3,7 +3,7 @@ main, main section, main section p, main .main-section .grid-container .huella p
   display: flex;
   flex-direction: column; }
 
-header .navbar div div form button:hover, main section a button:hover, main .main-section form button:hover {
+header .navbar div div form button:hover, main section a button:hover, .main-section form button:hover {
   font-family: 'riftsoft-demi', 'sans-serif';
   text-decoration: none;
   color: #ffffff;
@@ -27,7 +27,8 @@ h1 {
   font-family: 'riftsoft-demi', sans-serif;
   font-size: 3rem;
   color: #6454d1;
-  text-align: center; }
+  text-align: center;
+  padding: 15px; }
 
 h2 {
   font-family: 'riftsoft-demi', sans-serif;
@@ -43,6 +44,9 @@ h4 {
 
 h5 {
   text-align: center; }
+
+main .main-section p {
+  font-size: 1.2rem; }
 
 header {
   font-family: 'riftsoft-regular', sans-serif;
@@ -202,8 +206,8 @@ main .testimonios {
       margin-top: 10px; }
     main .testimonios .testimonios-card p {
       width: 100%;
-      font-size: medium;
-      padding: 0 10px; }
+      padding: 0 10px;
+      font-size: 1rem; }
 
 main .main-section .img-libro {
   text-align: center;
@@ -272,11 +276,13 @@ main .main-section .grid-container {
       text-align: center;
       padding: 10px; }
 
-main .main-section form {
+.main-section form {
   text-align: center; }
-  main .main-section form h2 {
+  .main-section form h2 {
     width: 100%; }
-  main .main-section form button {
+  .main-section form div label {
+    text-align: left; }
+  .main-section form button {
     font-family: 'riftsoft-regular', 'sans-serif';
     font-size: medium;
     font-weight: 300;
@@ -290,10 +296,10 @@ main .main-section form {
     text-align: center;
     justify-self: center;
     transition: 0.5s; }
-    main .main-section form button svg {
+    .main-section form button svg {
       margin: 0 5px 3px 0; }
 
-main .main-section img {
+.main-section img {
   width: 80%;
   margin-bottom: 15px; }
 
@@ -329,27 +335,27 @@ main .main-section img {
       margin: 5px 10px 5px 0px; }
 
 @media screen and (max-width: 1200px) {
-  main .main-section .img-libro img {
+  .main-section .img-libro img {
     width: 90%; }
-  main .main-section .grid-container {
+  .main-section .grid-container {
     width: 80%;
     display: grid;
     margin-top: 20px;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto;
     grid-gap: 10px; }
-    main .main-section .grid-container .huella {
+    .main-section .grid-container .huella {
       grid-column: span 1; }
-    main .main-section .grid-container div .huella-img {
+    .main-section .grid-container div .huella-img {
       grid-column: span 1; }
-    main .main-section .grid-container .individual {
+    .main-section .grid-container .individual {
       grid-column: span 2;
       grid-row: span 1; }
-      main .main-section .grid-container .individual h3 {
+      .main-section .grid-container .individual h3 {
         margin-bottom: 0; }
-      main .main-section .grid-container .individual p {
+      .main-section .grid-container .individual p {
         padding: 0; }
-    main .main-section .grid-container .individual-center {
+    .main-section .grid-container .individual-center {
       grid-column: span 2;
       grid-row: span 1; } }
 
@@ -361,11 +367,20 @@ main .main-section img {
       font-size: 1.2rem;
       margin-bottom: 2px; }
     header nav div div form {
-      margin-bottom: 10px; } }
+      margin-bottom: 10px; }
+  main .main-section h1 {
+    font-size: 2.5rem; }
+  main .main-section p {
+    font-size: 1.1rem; } }
 
 @media screen and (max-width: 900px) {
-  h1 {
-    font-size: 2rem; }
+  header nav {
+    z-index: 9999;
+    background-color: #6454d1; }
+    header nav div div ul a {
+      font-size: 1rem; }
+  main .main-section p {
+    font-size: 1rem; }
   main section .galeria {
     width: 80%;
     display: grid;
@@ -376,8 +391,6 @@ main .main-section img {
     main section .galeria .item-galeria-row {
       grid-column: span 2;
       grid-row: span 1; }
-  main .main-section p {
-    font-size: 1.2rem; }
   main .main-section .img-libro img {
     width: 100%; }
   main .main-section .grid-container {
@@ -389,16 +402,16 @@ main .main-section img {
     grid-gap: 10px;
     text-align: center; }
     main .main-section .grid-container p {
-      font-size: 1.2rem; }
+      font-size: 1rem; }
     main .main-section .grid-container .huella {
       grid-column: span 2;
       width: 100%; }
       main .main-section .grid-container .huella p {
-        font-size: 1.2rem; }
+        font-size: 1rem; }
     main .main-section .grid-container .individual p {
-      font-size: 1.2rem; }
+      font-size: 1rem; }
     main .main-section .grid-container .individual-center p {
-      font-size: 1.2rem; }
+      font-size: 1rem; }
     main .main-section .grid-container .huella-img {
       grid-column: span 2; }
   .footer {

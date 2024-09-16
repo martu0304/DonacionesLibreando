@@ -42,11 +42,9 @@ main {
 
             p {
                 width: nth($width, 1);
-                font-size: medium;
                 padding: 0 10px;
+                font-size: 1rem;
             }
-
         }
     }
-
 }

@@ -6,7 +6,6 @@ main {
     @extend %flex-column;
     @include alineacion (center, center, start);
 
-
     .hero {
         font-family: 'riftsoft-demi', sans-serif;
         font-size: 1.3rem;
@@ -72,7 +71,6 @@ main {
             }
         }
 
-
         .galeria {
             width: nth($width, 2);
             display: grid;
@@ -118,11 +116,8 @@ main {
                     width: nth($width, 1);
                     height: 100%;
                     object-fit: cover;
-
                 }
             }
-
-
         }
     }
 }
